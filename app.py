@@ -27,11 +27,11 @@ def compare_names(list1, list2, threshold=0.9):
 # --- Ввод ---
 col1, col2 = st.columns(2)
 with col1:
-    text1 = st.text_area("Текст редколлегии Журнала 1", height=400)
+    text1 = st.text_area("Данные о редколлегии журнала № 1", height=400)
 with col2:
-    text2 = st.text_area("Текст редколлегии Журнала 2", height=400)
+    text2 = st.text_area("Данные о редколлегии журнала № 2", height=400)
 
-threshold = st.slider("Порог схожести имён (0.7–1.0)", 0.9, 1.0, 0.9, 0.01)
+threshold = st.slider("Порог схожести имён (0.9–1.0)", 0.9, 1.0, 0.9, 0.01)
 
 # --- Сессия ---
 if "matches" not in st.session_state:
